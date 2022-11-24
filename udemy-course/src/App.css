@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+.template{
+  border: 11px dotted black;
+  border-radius: 10%;
+  position: relative;
+}
+
+h6{
+  margin: 0.001%
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.box{
+  display: inline-block;
+  border: 1px red solid;
+  margin : 1vh;
+}
