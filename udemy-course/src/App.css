@@ -9,7 +9,16 @@
 }
 
 h6{
-  margin: 0.001%
+  margin: 0%;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: relative;
+  width: min-content;
+  background-color: blue;
+  color:aliceblue;
+  display: inline;
+  bottom:12px;
+  left:50%;
 }
 
 input::-webkit-outer-spin-button,
@@ -22,4 +31,24 @@ input::-webkit-inner-spin-button {
   display: inline-block;
   border: 1px red solid;
   margin : 1vh;
+}
+
+#popup-dialog{
+  border: 2px solid transparent 20%;
+  background-color: blue;
+  color: white;
+  /* width: fit-content; */
+  position: fixed;
+  top: 10%;
+  left: 42%;
+  transform: "translate(-50%, -50%)";
+  height: auto;
+  width: 15%;
+  padding: 0% 1% 0.5% 1%;
+  margin: 0%;
+}
+
+#popup-dialog button{
+  position: relative;
+  left : 40%
 }

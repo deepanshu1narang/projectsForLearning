@@ -4,7 +4,7 @@ export default function ListItem(props) {
   return (
     <div>
         <h6>
-            I am an added list item and my rank is {props.rank}
+            {props.rank}
         </h6>
         <div className='responseCard'>
             <div>
