@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="icon" type="x-icon" href="cwh.jfif">
+
+        <style>
+            #async-await{
+                height : 200px;
+                width : auto;
+                /* word-wrap: break-word; */
+                overflow :auto;
+                /* scroll-behavior: ; */
+            }
+        </style>
+
+
+        <title>Asynchronous JavaScript CWH</title>
+    </head>
+
+    <body style="margin-left: 0.5rem;">
+        <!--///////////////////////////////////////// start code  /////////////////////////////////////////-->
+        <!--///////////////////////////////////////// start code  /////////////////////////////////////////-->
+
+        <h1>
+            Let's get started for a new journey.
+        </h1>
+        <h6>Disclaimer: numbers were taken upto 5000 initially but now reduced to 50 so that example can be kept and we
+            could do our work easily.</h6>
+        <div id=setTimeOut>
+            <div id='test1'>
+                <p id='test12'></p>
+                <p id='test11'></p>
+                <p>Magic!!!!!</p>
+                <p id='test14'></p>
+                <p id='test13'></p>
+            </div>
+        </div>
+
+        <div id='ajax'>
+            <h1 style="color:blue">AJAX in one video</h1>
+            <h6>AJAX from Code with Harry</h6>
+            <span style="display: block;">
+                <label>Enter value of x: &nbsp;</label>
+                <input id='x-val' onclick="addValue()">
+            </span>
+            <a href="https://www.restapitutorial.com/httpstatuscodes.html" target="_blank"> https status codes</a> for
+            reference.
+
+            <div class='buttons'>
+                <button type="button" id='fetchButton' class="btn btn-primary">Fetch Data</button>
+
+                <button type="button" class="btn btn-primary" id='fetchButton2'>Fetch Data 2</button>
+
+                <button type="button" class="btn btn-info" id='sendButton'>Send Button</button>
+
+                <button type="button" class="btn btn-info" id='sendButton2'>Send Button 2</button>
+
+                <button type="button" id='backupButton' class="btn btn-success">Show Student List</button>
+
+            </div>
+            <p></p>
+            <div id='students'>
+                <h5>Students List</h5>
+                <ol id='students-list' style="margin-left: -12px;">
+                </ol>
+            </div>
+
+            <div id='students2'>
+                <h5>Students List 2</h5>
+                <ol id='students-list2' style="margin-left: -12px;">
+                </ol>
+            </div>
+        </div>
+
+        <div id="words-api-game">
+            <h3>CWH exercise</h3>
+            <label>Enter a word: </label>
+            <input id='entered-word'>
+            <span id='output-span'>
+                <p id="output"
+                    style="display: block; color:blue; width: max-content; height: max-content; padding: 3px; border: 2px black double; background-color : rgba(255, 160, 122, 0.493)">
+                    meaning to be shown here.
+                </p>
+            </span>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <div id='promises'>
+            <h4><a href="https://www.w3schools.com/Js/js_promise.asp">Promises</a> in JS</h4>
+            <ul>
+                <li>resolve</li>
+                <li>reject</li>
+                <li>pending</li>
+            </ul>
+        </div>
+
+        <div id='fetch-api' class = 'container'>
+            <h3>Fetch API</h3>
+            <div id='work-space'></div>
+            <p></p>
+            <div id='work-space2'></div>
+            <div id='work-space3'></div>
+            <p></p>
+            <p id='work-space4'>
+
+            </p>
+            <!-- <button type="button" class="btn btn-primary" id = 'button1'>Button 1</button>
+
+            <button type="button" class="btn btn-danger" id = 'fetchData'>Fetch data</button> -->
+
+        </div>
+
+        <div id = async-await>
+            <p>0</p>
+            <p>1</p>
+        </div>
+
+        <!--////////////////////////////////////////// end code //////////////////////////////////////////-->
+        <!--////////////////////////////////////////// end code //////////////////////////////////////////-->
+    </body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src='asynchronousJS1.js'></script>
+
+    <script src='ajax.js'></script>
+
+    <script src='promises.js'></script>
+
+    <script src="callbacks.js"></script>
+
+    <script src="wordAPI.js"></script>
+
+    <script src='fetchAPI.js'></script>
+
+    <script src= "async_await.js"></script>
+
+    <script src = 'errorHandling.js'></script>
+
+</html>
+
+
+
+
+<body>
+
+</body>
+
+</html>

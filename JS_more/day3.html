@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 3</title>
+    <style type="text/css">
+        #divmul{
+            border: 2px;
+            border-color: blue;
+        }
+        .user{
+            display: block;
+            margin-bottom: 5px;
+            /* margin-right: 3px; */
+        }
+        /* .inp-box{
+            margin-left: 2px;
+        } */
+        .answer{
+            color: blueviolet;
+        }
+        .answer p{
+            margin-block-start: 0.5em;
+            margin-block-end: 0.25em;
+        }
+        main h1{
+            color:blue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>Let's begin</h1>
+        <div id = "inp">
+            <p>name</p><br>
+            <input id = 'name' type = 'text'>
+            <button id = "submit">submit</button>
+        </div>
+        <div id = 'divmul'>
+            <h3>To multiply and divide numbers:</h3>
+            <form id = 'ask' method = 'get'>
+                <span class = 'user'>
+                    <label for = 'no. 1'>1st Number: </label>    
+                    <input id = 'n1' style = "margin-left: 5px;">
+                </span>
+
+                <span class="user">
+                    <label for = 'no. 2'>2nd Number: </label>    
+                    <input id = 'n2'>
+                </span>
+
+                <span class = 'buttons'>
+                    <button id = 'multiply'>Multiply</button>
+                    <button id = 'divide'>Divide</button>
+                </span>
+                <span class = 'answer'>
+                    <p>The answer is:</p>
+                    <p id = 'result' style = "margin-top:-0.25em"></p>
+                </span>
+            </form>
+        </div>
+
+        <div id="user-defined-variable" style = "border: 3px red;">
+            <h4 style="margin-bottom: 5px;">Please enter the name and value of variable.</h4>
+            <div>
+                <label for = 'name'>Name of variable </label>
+                <input id = 'userDefinedVariable' type = 'text' style = "margin-top: -10px;">
+                <button class ='hiddenButton' onclick="clickIt()" hidden = true>Button</button>
+            </div>
+            <div style="margin-top: 5px;;">    
+                <label for = 'value'>Value </label>
+                <input id = 'userDefinedValue' type = 'text' style = "margin-top: -10px; margin-left: 75px;">
+                <button class ='hiddenButton' onclick="clickIt2()" hidden = true>Button</button>
+            </div>
+            <!-- <hr> -->
+        </div>
+        <main id = 'binding-in-arrow-functions'>
+            <h1>Binding in Arrow Functions</h1>
+            <button id = 'clickMe'>Click me</button>
+        </main>
+        
+        <main id = 'oops-in-js'>
+            <h1>OOPs in JS</h1>
+            <div id = 'car-service'>
+                <img id = 'car-image' src = 'car.jfif' style = "display: block;">
+                <span>Number of free services left are <span id = 'free-services-left' style = "color:blue">5</span></span>
+                <h1>Inheritence using classes</h3>
+            </div>
+
+    </header>
+</body>
+<script src = "day3.js"></script>
+<script src = "binding.js"></script> 
+<script src = "oops.js"></script>
+</html>

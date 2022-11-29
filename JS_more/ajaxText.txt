@@ -1,0 +1,2 @@
+This file is for learning the AJAX concept.
+Not every time link is used. This file can be used and we are learning it now.

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 random practice</title>
+</head>
+<body>
+    <div id = "page-print">
+        <h1>Beginning</h1>
+        <button id = 'print'>Print this document</button>
+        <span id = "newOb"></span>
+    </div>
+    <div id="current-date">
+        <span>
+            <p id = 'date' ondblclick="showDate()">Click me 2 times to check date</p>
+        </span>
+    </div>
+    <div id="date-game">
+        
+    </div>
+    <!--in this one learn impporting data using button -->
+    <div id="guess-game">
+        <input id = 'inp1' value = 'number' type="number">
+        <button id = 'btn'>submit</button>
+        <br>
+        <p id = 'result'></p>
+    </div>
+</body>
+<script>
+    ///////////////////////////////
+
+    console.log('working');
+    let print1 = document.getElementById('print');
+    print1.addEventListener('click',function(){
+        window.print();
+    })
+
+    // date question
+    
+    let date = new Date();
+    function showDate(){
+
+    let month =0 ;
+    if(date.getMonth() < 10){
+        month = '0' + date.getMonth();
+    }
+    else{
+        month = date.getMonth();
+    }
+
+    let dated =0 ;
+    if(date.getDate() < 10){
+        dated = '0' + date.getDate();
+    }
+    else{
+    dated = date.getDate();
+    }
+
+    document.getElementById('date').innerHTML = `Today's date is ${dated}/${month}/${date.getFullYear()}`
+    }
+
+    // date game
+    
+    let dateGame = document.getElementById('date-game');
+    let sunday = document.createElement('p');
+    // let text = `just testing`;
+    // dateGame.appendChild(text);
+    // sunday.appendChild(text)
+    
+    // let textNode = '';
+    // function isWas(y){
+    //     if(y <= date.getFullYear()){
+    //         textNode = `${date1} was sunday!`
+    //     }
+    //     else if(y > date.getFullYear()){
+    //         textNode = `${date1} will be sunday!`
+    //     }
+    // }
+
+    
+    let y = 2014
+    let date1 = new Date(y, 0, 1);
+    let day1 = date1.getDay();
+    
+    while(y <= 2050){
+        if(day1 == 0){
+            isWas(y);
+            if(dateGame.hasChildNodes == true){
+                dateGame.removeChild();
+            }
+            dateGame.appendChild(sunday);
+            isWas(y);
+            break;
+        }
+        else if(day1 != 0){
+            y++;
+        }
+    }
+    
+    let textNode = `sunday on ${date1}`;
+    sunday.append(textNode);
+    //// needs to be worked on
+    
+    ///// input from user
+    function generateRandomInteger(min,max){ 
+            let a = Math.floor(Math.random() *(max - min) + min);
+            return a;
+        }
+        
+        let z1 = generateRandomInteger(3,15);
+
+        function result(){
+            if(document.getElementById('inp1').value === z1){
+                document.getElementById('result').innerText = 'Right guess';   
+            }
+            else
+                document.getElementById('result').innerText = 'Better luck next time!';
+            // e.preventDefault();
+        }
+        
+    let button003 = document.getElementById('btn');
+
+    button003.addEventListener('click',result())
+
+    // days left till christmas
+    let xMas = new Date(date.getFullYear(), 11, 25);
+    let daysLeft = 0;
+    if(date.getMonth() === 11 && date.getDay() > 25){
+        daysLeft =  ( new Date(date.getFullYear() + 1, 11, 25).getTime() - date.getTime() )/( (1000*60*60*24) );
+    }
+    else{
+        daysLeft = ( xMas.getTime() - date.getTime() )/( (1000*60*60*24) ); // getTime() gives time difference in milliseconds
+    }
+    console.log(Math.floor(daysLeft));
+    //////////////////////////
+</script>
+</html>

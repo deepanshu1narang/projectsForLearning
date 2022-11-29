@@ -1,0 +1,104 @@
+/* body{
+    background-color:whitesmoke;
+} */
+
+/* form */
+
+div{
+    margin-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+div#form{
+    font-size: 1.5rem;
+    /* text-align: center; */
+}
+
+#form input{
+    height: 1.3rem;
+    padding: 1px;
+    /* background-color: aqua; */
+}
+
+form{
+    margin-left: 580px;
+    border: 4px solid black;
+    border-radius: 1%;
+    padding: 10px;
+    width: 24%;
+    /* background-color: aquamarine; */
+    background-color: rgba(245, 222, 179, 0.829);
+    /* background-color: green; */
+}
+
+textarea{
+    margin-top: 5px;
+    padding: auto;
+    /* margin-bottom: 2px; */
+}
+
+select{
+    height: 1.7rem;
+    padding: 1px;
+}
+
+div.buttons{
+    margin-top: 2px;
+}
+
+.buttons input{
+    /* height: 2rem; */
+    width: 70px;
+    padding: 1px;
+}
+
+.buttons button#submit{
+    margin-right: 5px;
+    /* margin-left: 15px; */
+    height: 1.7rem;
+}
+
+.buttons button#reset{
+    /* margin-left: 1px; */
+    height: 1.7rem;
+}
+
+input#fname{
+    margin-left: 2px;
+}
+
+/* table */
+
+div#table{
+    margin-top: 80px;
+    margin-left: 190px;
+    margin-bottom: 100px;
+}
+
+table{
+    border: 2px;
+    background-color:aliceblue;
+    border-collapse: separate;
+}
+
+table th{
+    width: 120px;
+    height: 30px;
+    padding: 3px;
+    font-size: 1.1rem;
+}
+
+table th#specialisation2{
+    width: 150px;
+}
+
+table th#achievements2{
+    width: 300px;
+}
+
+input ::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+    display : none;
+}

@@ -1,0 +1,19 @@
+1. list of libraries in an area
+2. info about each library and list of books in it.
+3. each book contains info as given in this object (feel free to add more)
+            book1 = {
+                name: 
+                author:
+                published in:
+                availability:
+                issueDate:
+                returnDate:
+                fine:
+                issuedBy:
+                refID:
+            }
+
+4. Info can be extracted for any book or library
+5. books can be issued and returned.
+6. feature to check list of all the books a person has issued.
+............ to be updated.

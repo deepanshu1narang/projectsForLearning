@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3 resource practice</title>
+    <style>
+        #main{
+            height : auto;
+            width : auto;
+            /* border: 3px;
+            border-style: dotted;
+            border-color: aqua; */
+            /* border-radius: 90%; */
+            padding-bottom: 15px;
+            padding-left : 5px;
+        }
+        .edit{
+            height : 400px;
+            width: 400px;
+            background-color: black;
+            color:white;
+            font-size: 1.0rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div id ='main'>
+        <h1 id = 'heading'>Practice</h1>
+    </div>
+</body>
+<script>
+    ///////////////////////////////////
+    {
+        let a1 = 32243; 
+        let i = 0;  
+        let c = 0;
+        function reverseIt(a){
+            while(a>=1){
+                let b = a%10; 
+                a = Math.floor(a/10);
+                c = c + b * Math.pow(10,i);  
+                i+=1;
+            }
+            console.log(c);
+        }
+
+        reverseIt(a1);
+    }
+    ///////////////////////////////////////////
+    {
+        let s1 = 'string';
+        let s2 = 'madam';
+
+        let isPalindrome = (s) => {
+            let i = s.length - 1;
+            let x = '';
+            for(; i >= 0; i--){
+                x = x  + s[i] ;
+            }
+            console.log(x);
+
+            if(x === s){
+                return true
+            }
+            else if(x !== s)
+                return false
+        }
+
+        let a1 = isPalindrome(s1);
+        let a2 = isPalindrome(s2);
+        console.log(a1,a2);
+    }
+
+    {
+        let str = 'the quick brown fox';
+
+        function capFirstLetter(stringIn){
+            let newStr = '';
+            let x = -1;
+            // stringIn[0] = stringIn[0].toUpperCase();
+            newStr = newStr + stringIn[0].toUpperCase();
+
+            for(let i = 1; i < stringIn.length; i++){
+                if(stringIn[i] !== ' '){
+                    if(i === x){
+                        // pass   
+                    }
+                    else
+                        newStr = newStr + stringIn[i];
+                }
+                else if(stringIn[i] === ' '){
+                    newStr = newStr + stringIn[i] + stringIn[i+1].toUpperCase();
+                    // stringIn[i+1] = stringIn[i+1].toUpperCase();   
+                    x = i+1;
+                }
+            }
+            console.log(newStr);
+        }
+
+        capFirstLetter(str);
+    }
+
+
+    {
+        let x1 = 27;
+        let x2 = 29;
+        let x3 = 35;
+        let x4 = 25;
+
+        let primeCheck = (x) => {
+            let p = false;
+            if(x === 2)
+                p = true
+            else if(x%2 === 0)
+                p = false;
+            else{ // odd no.s
+                for(let i = 3; i < x; i = i + 2){
+                    if(x%i === 0){
+                        p =  false;
+                        break;
+                    }
+                    else if(x%i !== 0){
+                        p = true;
+                    }  
+                }
+            }
+            return p;
+        }
+
+        // testing code here
+        function isPrime(y){
+            // y = primeCheck(x);
+            if(y === true)
+                console.log(`a prime number`);
+            else if(y === false)
+                console.log(`not a prime number`);
+        }
+
+        isPrime(primeCheck(x1));
+        isPrime(primeCheck(x2));
+        isPrime(primeCheck(x3));
+        isPrime(primeCheck(x4));
+    }
+
+    {
+        let x = 7;
+        let n = 3;
+        function idMatrix(x,n){
+            let arr = [];
+            let arrInArr = []
+            for (let i = 0; i< n; i++){ // outer array
+                for (let j = 0; j < n; j++){ // inner array
+                    if(j === i){
+                        arrInArr[j] = x;
+                    }
+                    else if(j !== i){
+                        arrInArr[j] = 0;
+                    }
+                }
+                arr[i] = arrInArr;
+            }
+            console.log(arr);
+        }
+        // outside function
+        idMatrix(7,3);
+    }
+
+    {
+        let a = (1,3,5);
+        console.log(typeof a);
+    }
+
+
+    ////////////
+    // editable div
+
+    let editableDiv = document.createElement('div');
+    editableDiv.setAttribute('id','edit') ;
+    editableDiv.classList.add('edit');
+    
+    let h1 = document.getElementsByTagName('h1')[0];
+    // h1.contentEditable = true;
+    let mainDiv = document.getElementById('main');
+    // console.log(mainDiv);
+    
+    
+
+    h1.addEventListener('click',function(){
+        mainDiv.appendChild(editableDiv);
+    });
+
+    
+    editableDiv.contentEditable = true;
+    let text = document.createTextNode('click to edit. everything you write here will be stored to local storage.');
+    editableDiv.appendChild(text);
+
+    editableDiv.addEventListener('click',function(){
+        editableDiv.innerText = '';
+
+        editableDiv.addEventListener('blur',function(){
+            let gotText = editableDiv.innerText;
+            console.log(gotText);
+            localStorage.setItem('x',JSON.stringify(gotText));
+            editableDiv.innerText = '';
+        })
+    })
+    /////////////////////////////////////
+</script>
+</html>

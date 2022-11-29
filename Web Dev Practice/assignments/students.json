@@ -1,0 +1,26 @@
+{
+    "students": [
+        {
+            "name": "Deepanshu Narang",
+            "branch": "Civil Engineering",
+            "semester" : 8
+        },
+
+        {
+            "name": "Sahil Kumar",
+            "branch": "Computer Science",
+            "semester": 7
+        },
+
+        {
+            "name": "Sumit",
+            "branch":"Mechanical Engineering",
+            "semester": 5
+        },
+        {
+            "name": "Yash",
+            "branch": "Electrical Engineering",
+            "semester": 6
+        }
+    ]
+}

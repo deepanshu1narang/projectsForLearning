@@ -1,0 +1,23 @@
+table{
+    border: 2px black solid;
+    background-color:rgba(225, 225, 225, 0.377);
+    /* border-collapse: separate; */
+}
+
+table th, table td{
+    width: 120px;
+    height: 30px;
+    padding: 3px;
+    font-size: 1.1rem;
+    border: 1.2px black solid;
+    text-align: center;
+}
+
+
+table{
+    margin-left: 400px;
+}
+
+h2{
+    text-align: center;
+}

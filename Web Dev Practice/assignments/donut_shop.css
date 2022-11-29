@@ -1,0 +1,74 @@
+body{
+    background-image: url('donut.jpg');
+    background-repeat:round;
+    background-attachment:fixed;
+    /* background-position: center; */
+}
+
+main{
+    display:inline-block;
+    width:75%;
+    height: auto;
+    margin: 20px;
+    padding: 5px;
+    font-size: 23px;
+    /* background-color: ; */
+}
+
+div#form{
+    width:280px;
+    height: 530px;
+    border: 4px solid blue;
+    padding:20px;
+
+}
+
+#form div{
+    margin-bottom: 10px;
+}
+
+main input{
+    size: 1.3em;
+}
+
+aside{
+    display: inline-block;
+    position:fixed;
+    top:20px;
+    right:20px;
+}
+
+h1{
+    color:cornflowerblue;
+}
+
+h2{
+    color:rgb(131, 235, 131);
+}
+
+h1,h2{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.buttons{
+    margin-top: 2px;
+}
+
+.buttons input{
+    /* height: 2rem; */
+    width: 70px;
+    padding: 1px;
+}
+
+.buttons #submit{
+    margin-right: 5px;
+    /* margin-left: 15px; */
+    height: 1.7rem;
+    width: 10px;
+}
+
+.buttons #reset{
+    /* margin-left: 1px; */
+    height: 1.7rem;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incture Donuts</title>
+    <link rel="stylesheet" href="donut_shop.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Welcome to Incture Donuts</h1>
+        <h2>FIll the form to buy donuts</h2>
+        <h3>Pickup services available</h3>
+    </header>
+    <main>
+        <div id="form">
+            <form id = "form1">
+                <div id ="name">
+                    <label for ="name" class = "label0">Name</label><br>
+                    <input type ="text" id ="name" placeholder ="Name"   name ="Name">
+                </div>
+                <div id = "phone-no">
+                    <label for ="phone number">Phone number</label><br>
+                        <select id = "s1" name ="country code">
+                            <option value ="+91" checked>+91</option>
+                        </select>
+                        <input type ="tel" id = "phone number" name = "phone number" pattern ="[0-9]{10}"   placeholder ="987XXXXXX1">
+                </div>
+                <div id = "cake">
+                    <label for = "cakes">No. of Cake Donuts</label><br>
+                    <input type ="number" id ="cakes" name ="cakes">
+                </div>
+                <div id = "glazed-donut">
+                    <label for = "glazed-donuts">No. of Glazed Donuts</label><br>
+                    <input type ="number" id ="glazed-donuts" name ="glazed-donuts">
+                </div>
+                <div id = "time">
+                    <label for = "waitTime">Minutes till pickup</label><br>
+                    <input type ="number" id ="minutes" name ="minutes">
+                </div>
+                <div class= "disabled">
+                    <label for = "subTotal">Sub-Total</label><br>
+                    <input disabled value = "" id = "subtotal">
+                </div>
+                <div class= "disabled">
+                    <label for = "tax">Tax</label><br>
+                    <input disabled value = "" id = "tax">
+                </div>
+                <div class= "disabled">
+                    <label for = "Total">Total</label><br>
+                    <input disabled value = "" id = "total">
+                </div>
+                <div class = "butons">
+                    <input type = "submit" id = "submit">
+                    <span><input type ="reset" id ="reset"></span>
+                    <span><button id = "amt">Check Amount</button></span>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="donut_shop.js"></script>
+</body>
+</html>
