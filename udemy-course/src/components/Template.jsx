@@ -5,6 +5,7 @@ import Modal from './Modal';
 
 
 export default function Template() {
+
     const [state, setState] = useState({
         name : "",
         email : "",
@@ -61,7 +62,7 @@ export default function Template() {
 
     const submitForm = (e) => {
         e.preventDefault();
-        // alert("success");
+
         if(state.name !== "" && state.email !== "" && (state.age !== "" ||  state.age < 1) && state.year >= 2004 && state.year <= 2007){
 
             setModalIsOpen(false);
@@ -94,6 +95,7 @@ export default function Template() {
 
     useEffect(() => {
         modalIsOpen ? document.body.style.backgroundColor = "rgba(0, 0, 0, 0.205)" : document.body.style.backgroundColor = "white";
+
     }
         ,[modalIsOpen]
     );
@@ -110,10 +112,10 @@ export default function Template() {
             !showForm ? 
             (<button type="button" onClick={displayForm}>Add Detail</button>) : 
             (<form onSubmit={submitForm}>
-                <input type="text" name="name" placeholder="Name" autoComplete="off" value={state.name} onChange={changeHandler} /><br/>
-                <input type="email" name="email" placeholder="email@example.com" autoComplete="off" value={state.email} onChange={changeHandler} /><br/>
-                <input type="number" name="age" placeholder="Age" autoComplete="off" value={state.age} onChange={changeHandler} /><br/>
-                <input type="number" name="year" placeholder="Year" autoComplete="off" value={state.year} onChange={changeHandler} /><br/>
+                <input id="name01" type="text" name="name" placeholder="Name" autoComplete="off" value={state.name} onChange={changeHandler} /><br/>
+                <input id="email01" type="email" name="email" placeholder="email@example.com" autoComplete="off" value={state.email} onChange={changeHandler} /><br/>
+                <input id="age01" type="number" name="age" placeholder="Age" autoComplete="off" value={state.age} onChange={changeHandler} /><br/>
+                <input id="year01" type="number" name="year" placeholder="Year" autoComplete="off" value={state.year} onChange={changeHandler} /><br/>
                 <button type="submit">Submit</button>
                 {" "}
                 <button type="button" onClick={displayForm}>Cancel</button><br/>
@@ -146,9 +148,9 @@ export default function Template() {
             }
         {
             modalIsOpen && 
-            (<Modal open={modalIsOpen} onClose={() => {setModalIsOpen(false)} }>
+            <Modal open={modalIsOpen} onClose={() => {setModalIsOpen(false)} }>
                 <p>Please fill the form carefully and properly.</p>
-            </Modal>)
+            </Modal>
         }
         </div>
     </div>

@@ -14,3 +14,7 @@ export default function Modal(props) {
     document.getElementById("portal"));
   }
 }
+
+// 1. sse server side events
+// 2. server side caching
+// 3. EventSource
