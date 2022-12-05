@@ -52,3 +52,9 @@ input::-webkit-inner-spin-button {
   position: relative;
   left : 40%
 }
+
+#logOut{
+  position: absolute;
+  top: 1%;
+  right: 0.2%;
+}

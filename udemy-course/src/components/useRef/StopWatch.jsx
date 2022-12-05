@@ -14,7 +14,7 @@ export default function Stopwatch() {
     intervalRef.current = setInterval(() => {
       setNow(Date.now());
     }, 10);
-    console.log("intervalRef====>", intervalRef);
+    console.log("intervalRef====>", intervalRef, intervalRef.current);
   }
 
   function handleStop() {
@@ -38,3 +38,5 @@ export default function Stopwatch() {
     </>
   );
 }
+
+// git@github.com:deepanshu1narang/projectsForLearning.git
