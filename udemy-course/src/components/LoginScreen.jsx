@@ -3,6 +3,8 @@ import { useState } from 'react';
 
 export default function LoginScreen(props) {
 
+    // const [disabled1, setDisabled] = useState(true);
+
     const [cred, setCred] = useState({
         email: "",
         password: "", 
@@ -39,7 +41,9 @@ export default function LoginScreen(props) {
             return;
         }
         else{
+            // setDisabled(false);
             props.logIn();
+            console.log("ok");
         }
     }
 
@@ -55,7 +59,7 @@ export default function LoginScreen(props) {
             <input name='password' value={cred.password} onChange={changeHandler} type="password" placeholder='password'/>
         </div>
         <div>
-            <button onClick={logMeIn}>Log in</button>
+            <button disabled={cred.email==="" || cred.password==="" ? true : false} onClick={logMeIn}>Log in</button>
             <p style={{color:"red"}}>{message}</p>
         </div>
     </div>

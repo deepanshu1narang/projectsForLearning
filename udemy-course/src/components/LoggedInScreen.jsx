@@ -31,10 +31,25 @@ export default function LoggedInScreen(props) {
         <LogButtonClicks />
         <StopWatch2 />
         <AccessingDomElement />
+      
+        <hr />
+        <h1>
+        Challenge 3 -- use some server side event
+        </h1>
+        <hr />
+        <h1>
+        Challenge 4 -- extract data from csv file
+        </h1>
+        <hr />
+        <h1>
+        Challenge 5 - It should not log out on refresh
+        </h1>
+        completed
+        <hr />
         
-        <footer>
+        <aside style={{border:"4px solid black"}}>
             <D3info />
-        </footer>
+        </aside>
     </div>
   )
 }
