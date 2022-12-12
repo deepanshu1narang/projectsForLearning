@@ -58,3 +58,40 @@ input::-webkit-inner-spin-button {
   top: 1%;
   right: 0.2%;
 }
+
+#logInButton{
+  position:relative;
+  left: 0%;
+}
+
+.contact{
+  height: auto;
+  width: auto;
+  border: 1px solid green;
+  border-radius: 10%;
+}
+
+.label-inside-input #fields div{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.label-inside-input input{
+  /* padding-left: 4.4%; */
+  height: 2rem;
+  font-size: 1.3rem;
+}
+
+.label-inside-input .label{
+  display: inline;
+}
+
+/* .label-inside-input label{ */
+  /* display: inline; */
+  /* position: relative; */
+  /* top: 2rem; 1.2 */
+  /* left: -6.5%; */
+  /* font-size: 1.4rem; 1.4rem/1.5 = 0.93334rem */
+/* } */
+
+/* #fields */

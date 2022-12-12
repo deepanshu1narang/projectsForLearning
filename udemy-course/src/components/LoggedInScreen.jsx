@@ -8,6 +8,8 @@ import StopWatch2 from "./useRef/StopWatch2";
 import AccessingDomElement from "./useRef/AccessingDomElement";
 import LearnCLeanup from "./LearnCleanup";
 import LogOutButton from './LogOutButton';
+import UseRefPlayer from './useRef/UseRefPlayer';
+import BetterUseCaseOfUseReducer from './useReducer/BetterUseCaseOfUseReducer';
 
 export default function LoggedInScreen(props) {
   return (
@@ -31,6 +33,11 @@ export default function LoggedInScreen(props) {
         <LogButtonClicks />
         <StopWatch2 />
         <AccessingDomElement />
+        <div style={{border: "1px solid blue"}}>
+          use case: video player using useRef();
+          creating bugs... will solve later
+          {/* <UseRefPlayer /> */}
+        </div>
       
         <hr />
         <h1>
@@ -46,6 +53,9 @@ export default function LoggedInScreen(props) {
         </h1>
         completed
         <hr />
+        Challenge 6 - {"useReducer()"}
+        <BetterUseCaseOfUseReducer />
+        
         
         <aside style={{border:"4px solid black"}}>
             <D3info />

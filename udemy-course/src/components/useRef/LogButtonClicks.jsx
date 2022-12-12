@@ -10,7 +10,6 @@ export default function LogButtonClicks() {
 
     const handle = () => {
       countRef.current+=1;
-      console.log(`button clicked ${countRef.current} times`);
     };
 
     const handle2 = () => {
@@ -18,16 +17,16 @@ export default function LogButtonClicks() {
     }
     
     useEffect(() => {
-      console.log(`Clicked ${count} times`);
     }, [count]);
 
-    console.log('I rendered');
   return (
     <React.Fragment>
         <h1>use case: logging button clicks</h1>
-        <button onClick={handle}>CLick me</button>
-        <p>Click this button to know difference b/w state and ref</p>
+        <button onClick={handle}>Click me</button>
+        <p>clicked {countRef.current} times using ref</p>
+        <p>Click this button to know difference b/w state and ref and will update the count when rendering happens</p>
         <button onClick={handle2}>Click me 2</button>
+        <p>clicked {count} times using state</p>
     </React.Fragment>
   )
 }
