@@ -10,6 +10,7 @@ import LearnCLeanup from "./LearnCleanup";
 import LogOutButton from './LogOutButton';
 import UseRefPlayer from './useRef/UseRefPlayer';
 import BetterUseCaseOfUseReducer from './useReducer/BetterUseCaseOfUseReducer';
+import Counter2 from './useReducer/Counter2';
 
 export default function LoggedInScreen(props) {
   return (
@@ -55,6 +56,7 @@ export default function LoggedInScreen(props) {
         <hr />
         Challenge 6 - {"useReducer()"}
         <BetterUseCaseOfUseReducer />
+        <Counter2 />
         
         
         <aside style={{border:"4px solid black"}}>

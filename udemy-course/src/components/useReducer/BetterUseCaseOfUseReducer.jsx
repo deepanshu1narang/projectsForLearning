@@ -69,7 +69,7 @@ export default function BetterUseCaseOfUseReducer() {
         </form>
 
 
-        <div>
+        <div id="contactCards">
             <ul type="none">
             {state.filter(contact => contact.name.trim().length > 0).map((contact, i) => {
                 return (

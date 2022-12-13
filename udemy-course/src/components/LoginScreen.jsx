@@ -2,6 +2,7 @@ import React from 'react';
 import { useRef } from 'react';
 import { useState, useEffect } from 'react';
 import Counter1 from './useReducer/Counter1';
+import Counter2 from './useReducer/Counter2';
 
 export default function LoginScreen(props) {
 
@@ -105,10 +106,13 @@ export default function LoginScreen(props) {
         </div>
         <div style={{color:"red"}}>{message}</div>
     </form>
+    
     <h4>
         Don't know the credentials: play counter game.
     </h4>
     <Counter1 />
+
+    {/* <Counter2 /> */}
     <p>Log in to check a better example</p>
     </>
 
