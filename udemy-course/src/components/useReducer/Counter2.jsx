@@ -82,6 +82,7 @@ export default function Counter2() {
 
       <div>
         <button onClick={() => {dispatch({type: "increase", value: 1})}}>increase</button>
+        {/* inside dispatch an object is there, that is the action object */}
         <button onClick={() => {dispatch({type: "decrease", value: 1})}}>decrease</button>
         <button onClick={() => {dispatch({type: "reset"})}}>reset</button>
         <button onClick={() => {dispatch({type: "increase", value: 5})}}>increase 5</button>

@@ -1,5 +1,7 @@
 import React, {useReducer, useState} from 'react';
 import Contact from './Contact';
+import useReducerInfoImage from "../../images/useReducerInfoImage.png";
+// import useReducerInfoImage from "../../images/useReducerInfoImage";
 
 const initialState = [
     {
@@ -47,6 +49,8 @@ export default function BetterUseCaseOfUseReducer() {
 
   return (
     <div>
+        <h2 style={{margin:'0px'}}>useReducer</h2>
+        <img src={useReducerInfoImage} height="50%" width="50%"/>
         <h3>A better example of useReducer for premium users only.</h3>
         <form onSubmit={addContact} className="label-inside-input">
             <div id="fields">    
