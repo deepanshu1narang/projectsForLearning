@@ -32,7 +32,6 @@ export default function BetterUseCaseOfUseReducer() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
 
-    console.log(state);
     const addContact = (e) => {
         e.preventDefault();
         const contact = {

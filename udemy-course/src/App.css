@@ -88,7 +88,6 @@ input::-webkit-inner-spin-button {
 }
 
 .label-inside-input input{
-  /* padding-left: 4.4%; */
   height: 2rem;
   font-size: 1.3rem;
 }
@@ -97,20 +96,47 @@ input::-webkit-inner-spin-button {
   display: inline;
 }
 
-/* .label-inside-input label{ */
-  /* display: inline; */
-  /* position: relative; */
-  /* top: 2rem; 1.2 */
-  /* left: -6.5%; */
-  /* font-size: 1.4rem; 1.4rem/1.5 = 0.93334rem */
-/* } */
-
-/* #fields */
-
 .counter02{
   border: 3px solid red;
   background-color: aquamarine;
   color: black;
   margin-right: 0.2vw;
   margin-left: 0.2vw;
+}
+
+#toDoCard{
+  border: 0.1rem solid black;
+  border-radius: 5%;
+  background-color: aliceblue;
+  font-family: cursive;
+  width: 15vw;
+  height: 8rem;
+  margin:0.8vh 0.4vw;
+  text-align: center;
+}
+
+#toDoCard h4{
+  margin: 0vh;
+}
+
+#toDoCard p{
+  margin: 0.3rem;
+  text-align: justify;
+}
+
+#toDoCard button{
+  background-color: rgba(0, 0, 255, 0.623);
+  color: azure;
+  border: 1px solid transparent 30%;
+}
+
+.rightMost{
+  position: relative;
+  left: 34%;
+}
+
+#todo-list-ul li{
+  display: inline-flex;
+  height: min-content;
+  
 }

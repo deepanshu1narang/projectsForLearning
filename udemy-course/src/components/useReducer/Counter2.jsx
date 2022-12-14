@@ -56,10 +56,6 @@ export default function Counter2() {
     const messageRef = useRef("no message");
 
     useEffect(() => {
-        console.log(state, "with useEffect");
-    }, [state]);
-
-    useEffect(() => {
         const eventListenerMessage =() => {console.log("event listener working on ref: without refresh: yes, with refresh: yes")}
         if(message.trim().length > 0){
             setTimeout(() => setMessage(""), 9000);

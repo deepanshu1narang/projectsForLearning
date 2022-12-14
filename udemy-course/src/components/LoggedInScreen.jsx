@@ -11,6 +11,7 @@ import LogOutButton from './LogOutButton';
 import UseRefPlayer from './useRef/UseRefPlayer';
 import BetterUseCaseOfUseReducer from './useReducer/BetterUseCaseOfUseReducer';
 import Counter2 from './useReducer/Counter2';
+import ToDoList from './useReducer/ToDoList';
 
 export default function LoggedInScreen(props) {
   return (
@@ -57,7 +58,8 @@ export default function LoggedInScreen(props) {
         Challenge 6 - {"useReducer()"}
         <BetterUseCaseOfUseReducer />
         <Counter2 />
-        
+        <h2>To Do List</h2>
+        <ToDoList />
         
         <aside style={{border:"4px solid black"}}>
             <D3info />
