@@ -1,0 +1,10 @@
+.badge{
+    position: relative;
+    margin: 0px;
+    bottom :65%;
+    left: 78%;
+    color: azure;
+    display: inline-flex;
+    /* border: 0.1rem azure solid; */
+    /* border-radius: 50%; */
+}

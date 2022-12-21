@@ -1,0 +1,69 @@
+.available-meals ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.available-meals ul li{
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.mealCard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 3px solid green;
+    margin: 1vh;
+    padding: 2px;
+    width: 90%;
+    height: 90%;
+    height: auto;
+    background-color: rgba(50, 49, 50, 0.737);
+    justify-content: center;
+    color: azure;
+}
+
+.mealCard h1, .mealCard h3, .mealCard p, .mealCard button{
+    margin: 0.4vh 0.1vw;
+    width: fit-content;
+}
+
+.mealCard h1{
+    border-bottom: 1px solid azure;
+}
+
+.mealCard h3{
+    display: inline;
+}
+
+.mealCard button{
+    height: 2rem;
+    font-size: larger;
+    display: inline;
+}
+
+.mealCard img{
+    height: 70%;
+    width: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.mealCard .mealCardFooter{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mealCard .mealCardFooter button{
+    float: right;
+}
+
+.button-in-button button{
+    width: fit-content;
+    padding: 0px;
+    height: 85%;
+}

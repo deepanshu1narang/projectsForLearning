@@ -53,18 +53,18 @@ const Login2 = (props) => {
     // setEnteredEmail(event.target.value);
     dispatchEmail({type: "USER_INPUT_EMAIL", value: event.target.value, isValid: event.target.value.includes("@")});
 
-    setFormIsValid(
-      emailState.value.includes('@') && passwordState.value.trim().length > 6
-    );
+    // setFormIsValid(
+    //   emailState.value.includes('@') && passwordState.value.trim().length > 6
+    // );
   };
 
   const passwordChangeHandler = (event) => {
     // setEnteredPassword(event.target.value);
     dispatchPassword({type: "USER_INPUT_PASSWORD", value: event.target.value, isValid: event.target.value.trim().length > 6})
 
-    setFormIsValid(
-      emailState.value.includes('@') && event.target.value.trim().length > 6
-    );
+    // setFormIsValid(
+    //   emailState.value.includes('@') && event.target.value.trim().length > 6
+    // );
   };
 
   const validateEmailHandler = () => {
@@ -81,6 +81,22 @@ const Login2 = (props) => {
     event.preventDefault();
     props.onLogin(emailState.value, passwordState.value);
   };
+
+  useEffect(() => {
+    const identifier = setTimeout(() => {
+      console.log('Checking form validity!');
+      setFormIsValid(
+        emailState.isValid && passwordState.isValid
+      );
+    }, 1000);
+
+    return () => {
+      console.log('CLEANUP');
+      clearTimeout(identifier);
+    };
+  }, [emailState, passwordState]);
+
+  console.log(emailState, passwordState);
 
   return (
     <Card className={classes.login}>
@@ -117,8 +133,12 @@ const Login2 = (props) => {
           <Button type="submit" className={classes.btn} disabled={!formIsValid}>
             Login
           </Button>
+          <Button>
+            random
+          </Button>
         </div>
       </form>
+      <p>random paragraph</p>
     </Card>
   );
 };

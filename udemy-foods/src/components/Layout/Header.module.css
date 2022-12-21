@@ -1,0 +1,20 @@
+
+.grid-container-header{
+    display: grid;
+    grid-template-columns: 92% auto;
+    gap: 1vw;
+    background-color: brown;
+    color: white;
+}
+
+.grid-container-header > h1{
+    text-align:left;
+    margin: 0.5% 0% 0.5% 2%;
+}
+
+.grid-container-header > button{
+    height: 2rem;
+    width: max-content;
+    font-size: medium;
+    margin-top: 9%;
+}

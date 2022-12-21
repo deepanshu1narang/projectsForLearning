@@ -1,0 +1,13 @@
+.cart-button{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: inherit;
+    border: 0mm transparent;
+}
+
+.cart-button > span{
+    align-self: center;
+    justify-content: center;
+    cursor: pointer;
+}
