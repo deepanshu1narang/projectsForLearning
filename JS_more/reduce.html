@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array.prototype.reduce()</title>
+</head>
+<body>
+    <h1>exploring reduce HOF in JS</h1>
+    <p>
+        The reduce() method executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.
+
+        The first time that the callback is run there is no "return value of the previous calculation". If supplied, an initial value may be used in its place. Otherwise the array element at index 0 is used as the initial value and iteration starts from the next element (index 1 instead of index 0).
+    </p>
+    <text>
+        let something = array1.reduce(reducerFunction, initialValue);
+        <ul>
+            Params of reduce:
+            <li>reducerFunc OR callbackFunction</li>
+            <li>initialValue (optional)</li>
+        </ul>
+        <ul>
+            Params of reducerFunction are: (if no initialValue)<br />
+            -- for the first call
+            <li>accumulator: array1[0]</li>
+            <li>currentValue: array1[1]</li>
+            <li>currentIndex: index (optional)</li>
+            <li>array: <i>the array reduce was called upon (array1) in our case</i> (optional)</li>
+        </ul>
+        <ul>
+            Params of reducerFunction are: (if initialValue)<br />
+            -- for the first call
+            <li>accumulator: initialValue</li>
+            <li>currentValue: array1[0]</li>
+            <li>currentIndex: index (optional)</li>
+            <li>array: <i>the array reduce was called upon (array1) in our case</i> (optional)</li>
+        </ul>
+        <ul>
+            <li>
+                Better check <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce#how_reduce_works_with_an_initial_value" target="_blank">here</a> for invoking order
+            </li>
+        </ul>
+        <ul>
+            Exceptions:
+            <li>
+                <h4>TypeError</h4>
+                The array contains no elements and <u>initialValue</u> is not provided.
+            </li>
+        </ul>
+    </text>
+    <ol>
+        <strong><u>Examples</u></strong>
+        <li>
+            To return the sum of all the elements in array
+        </li>
+        <li>Getting max out of an array</li>
+        <li>Flattening an array</li>
+        <li>Counting instances of values in an object</li>
+        <li>Grouping Objects by Property</li>
+        
+    </ol>
+    <script src="reduce1.js"></script>
+</body>
+</html>
