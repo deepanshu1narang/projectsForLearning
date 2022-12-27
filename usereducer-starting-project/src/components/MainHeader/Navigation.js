@@ -1,9 +1,7 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import AuthContext from "../../Store/auth-context";
 
 import classes from "./Navigation.module.css";
-
-
 
 // without using useContext
 
@@ -41,7 +39,6 @@ import classes from "./Navigation.module.css";
 // with useContext
 
 const Navigation = () => {
-
   const ctx = useContext(AuthContext); /// bit more readable
 
   return (
@@ -59,7 +56,12 @@ const Navigation = () => {
         )}
         {ctx.isLoggedIn && (
           <li>
-            <button onClick={ctx.onLogout}>Logout</button>
+            <button
+             onClick={ctx.onLogout} 
+            //  onMouseMove={ctx.mouseIsMoving}
+            >
+              Logout
+            </button>
           </li>
         )}
       </ul>
