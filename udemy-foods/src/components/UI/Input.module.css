@@ -1,0 +1,36 @@
+.inputBoxInactive{
+    height: 2rem;
+    width: 28%;
+    padding-left: 15%;
+    padding-top: 1.5px;
+}
+
+.inputBoxActive{
+    height: 2rem;
+    width: 25%;
+    padding-left: 5%;
+    padding-top: 0.1rem;
+}
+
+.label{
+    color: black;
+    font-size: 0.8rem;
+    position: relative;
+    left: 1%;
+    margin:-14.5%;
+    /* margin:-14.5%; */
+}
+
+.labelAfterClick{
+    color: black;
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 0.5rem;
+    left: 1%;
+    margin:-14.5%;
+}
+
+.normalInputBox{
+    height: 2rem;
+    width: 10%;
+}

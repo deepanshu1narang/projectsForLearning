@@ -58,12 +58,10 @@
     align-items: center;
 }
 
-.mealCard .mealCardFooter button{
+/* .mealCard .mealCardFooter button{
     float: right;
-}
+} */
 
-.button-in-button button{
-    width: fit-content;
-    padding: 0px;
-    height: 85%;
+#mealItemForm{
+    float:right;
 }
