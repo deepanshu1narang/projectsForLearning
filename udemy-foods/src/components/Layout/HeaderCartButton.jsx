@@ -6,14 +6,14 @@ import  PropTypes  from 'prop-types';
 
 export default function HeaderCartButton(props) {
   return (
-    <button className={classes['cart-button']} onClick={props.cartButtonHandler}>
+    <button className={classes['cart-button']} onClick={props.cartButtonHandler} disabled={!props.modalIsOpen ? false : true}>
         <span>
             {/* <Badge>5</Badge> */}
             <Badge>{props.itemsInCart}</Badge>
             <ShoppingCartOutlinedIcon />
         </span>
         <div>
-            Your Cart
+            <strong>Your Cart</strong>
         </div>
     </button>
   )

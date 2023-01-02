@@ -1,0 +1,149 @@
+{
+  "meals": [
+    {
+      "strMeal": "Baingan Bharta",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/urtpqw1487341253.jpg",
+      "idMeal": "52807",
+      "price": "170"
+    },
+    {
+      "strMeal": "Chicken Handi",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg",
+      "idMeal": "52795",
+      "price": "300"
+    },
+    {
+      "strMeal": "Dal fry",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg",
+      "idMeal": "52785",
+      "price": "200"
+    },
+    {
+      "strMeal": "Kidney Bean Curry",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/sywrsu1511463066.jpg",
+      "idMeal": "52868",
+      "price": "230"
+    },
+    {
+      "strMeal": "Lamb Biryani",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/xrttsx1487339558.jpg",
+      "idMeal": "52805",
+      "price": "400"
+    },
+    {
+      "strMeal": "Lamb Rogan josh",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/vvstvq1487342592.jpg",
+      "idMeal": "52808",
+      "price": "450"
+    },
+    {
+      "strMeal": "Matar Paneer",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/xxpqsy1511452222.jpg",
+      "idMeal": "52865",
+      "price": "350"
+    },
+    {
+      "strMeal": "Nutty Chicken Curry",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/yxsurp1511304301.jpg",
+      "idMeal": "52851",
+      "price": "500"
+    },
+    {
+      "strMeal": "Recheado Masala Fish",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/uwxusv1487344500.jpg",
+      "idMeal": "52809",
+      "price": "650"
+    },
+    {
+      "strMeal": "Smoked Haddock Kedgeree",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/1550441275.jpg",
+      "idMeal": "52964",
+      "price": "540"
+    },
+    {
+      "strMeal": "Tandoori chicken",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/qptpvt1487339892.jpg",
+      "idMeal": "52806",
+      "price": "350"
+    },
+
+    {
+      "strMeal": "BeaverTails",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/ryppsv1511815505.jpg",
+      "idMeal": "529280",
+      "price": "1200"
+    },
+    {
+      "strMeal": "Breakfast Potatoes",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/1550441882.jpg",
+      "idMeal": "529650",
+      "price": "2200"
+    },
+    {
+      "strMeal": "Canadian Butter Tarts",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/wpputp1511812960.jpg",
+      "idMeal": "529230",
+      "price": "1400"
+    },
+    {
+      "strMeal": "Montreal Smoked Meat",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/uttupv1511815050.jpg",
+      "idMeal": "529270",
+      "price": "1900"
+    },
+    {
+      "strMeal": "Nanaimo Bars",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/vwuprt1511813703.jpg",
+      "idMeal": "529240",
+      "price": "2900"
+    },
+    {
+      "strMeal": "Pate Chinois",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/yyrrxr1511816289.jpg",
+      "idMeal": "529300",
+      "price": "3200"
+    },
+    {
+      "strMeal": "Pouding chomeur",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/yqqqwu1511816912.jpg",
+      "idMeal": "529320",
+      "price": "3500"
+    },
+    {
+      "strMeal": "Poutine",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg",
+      "idMeal": "528040",
+      "price": "1200"
+    },
+    {
+      "strMeal": "Rappie Pie",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/ruwpww1511817242.jpg",
+      "idMeal": "529330",
+      "price": "5200"
+    },
+    {
+      "strMeal": "Split Pea Soup",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/xxtsvx1511814083.jpg",
+      "idMeal": "529250",
+      "price": "800"
+    },
+    {
+      "strMeal": "Sugar Pie",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/yrstur1511816601.jpg",
+      "idMeal": "529310",
+      "price": "1300"
+    },
+    {
+      "strMeal": "Timbits",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/txsupu1511815755.jpg",
+      "idMeal": "529290",
+      "price": "2500"
+    },
+    {
+      "strMeal": "Tourtiere",
+      "strMealThumb": "https://www.themealdb.com/images/media/meals/ytpstt1511814614.jpg",
+      "idMeal": "529260",
+      "price": "2000"
+    }
+  ]
+}

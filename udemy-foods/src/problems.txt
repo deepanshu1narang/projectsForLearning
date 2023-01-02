@@ -1,0 +1,5 @@
+1. fix the css of the form when add to cart is pressed..... FIXED
+2. Add toCart should work for one card at a time.
+
+3. use quantity = 0 for in the json if required again
+

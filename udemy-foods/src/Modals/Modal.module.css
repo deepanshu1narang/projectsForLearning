@@ -1,0 +1,25 @@
+.cart-popup{
+  border: 2px solid transparent 20%;
+  background-color: whitesmoke;
+  color: black;
+  /* width: fit-content; */
+  position: fixed;
+  top: 10%;
+  left: 32%;
+  transform: "translate(-50%, -50%)";
+  height: auto;
+  min-height: 30%;
+  width: 35%;
+  padding: 0% 1% 0.5% 1%;
+  margin: 0%;
+}
+
+.cart-popup .closeButton{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 3%;
+    right: 1%;
+    cursor: pointer;
+}

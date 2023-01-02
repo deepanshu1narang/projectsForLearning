@@ -1,0 +1,13 @@
+.loading{
+    border: 2px solid transparent 20%;
+  background-color: transparent;
+  position: fixed;
+  top: 13%;
+  left: 45%;
+  transform: "translate(-50%, -50%)";
+  height: auto;
+  min-height: 30%;
+  width: 35%;
+  padding: 0% 1% 0.5% 1%;
+  margin: 0%;
+}

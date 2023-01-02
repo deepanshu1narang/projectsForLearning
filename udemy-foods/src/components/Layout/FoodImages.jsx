@@ -10,9 +10,9 @@ export default function FoodImages() {
   return (
     <div className={classes['main-images']} >
         <img src={mealsImg} alt="56 bhog 😋😋" />
-        <img src={thaliFood} alt="paneer thali 😋😋" />
         <img src={pizza} alt="pizza 😋😋" />
         <img src={ramen} alt="ichiraku no ramen 😋😋" />
+        <img src={thaliFood} alt="paneer thali 😋😋" />
       </div>
   )
 }

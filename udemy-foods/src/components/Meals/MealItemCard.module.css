@@ -1,15 +1,3 @@
-.available-meals ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.available-meals ul li{
-    flex-wrap: wrap;
-    width: 30%;
-}
-
 .mealCard{
     display: flex;
     flex-direction: column;
@@ -57,16 +45,4 @@
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
-}
-
-/* .mealCard .mealCardFooter button{
-    float: right;
-} */
-
-#mealItemForm{
-    float:right;
-    justify-content: flex-end;
-    position: relative;
-    right: 0rem;
-    top: 1.1rem;
 }
