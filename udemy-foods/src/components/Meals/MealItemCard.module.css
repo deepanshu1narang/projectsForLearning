@@ -42,7 +42,7 @@
 
 .mealCard .mealCardFooter{
     display: flex;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     align-items: center;
 }

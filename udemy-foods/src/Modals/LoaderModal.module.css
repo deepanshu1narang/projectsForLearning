@@ -2,12 +2,14 @@
     border: 2px solid transparent 20%;
   background-color: transparent;
   position: fixed;
-  top: 13%;
-  left: 45%;
+  top: 35%;
+  left: 47%;
   transform: "translate(-50%, -50%)";
   height: auto;
   min-height: 30%;
   width: 35%;
   padding: 0% 1% 0.5% 1%;
   margin: 0%;
+  cursor: progress;
+  z-index: 13;
 }

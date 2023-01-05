@@ -4,14 +4,15 @@
   color: black;
   /* width: fit-content; */
   position: fixed;
-  top: 10%;
-  left: 32%;
+  top: 30%;
+  left: 20%;
   transform: "translate(-50%, -50%)";
   height: auto;
   min-height: 30%;
-  width: 35%;
+  width: 60%;
   padding: 0% 1% 0.5% 1%;
   margin: 0%;
+  z-index: 11;
 }
 
 .cart-popup .closeButton{

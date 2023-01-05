@@ -1,4 +1,8 @@
 .normalInputBox{
     height: 1.5rem;
     width: 2rem;
+    background-color: inherit;
+    border: 0px transparent solid;
+    text-align: center;
+    justify-content: center;
 }

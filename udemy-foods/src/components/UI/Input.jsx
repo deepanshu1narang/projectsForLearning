@@ -1,16 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 import classes from "./Input.module.css";
 
-export default function Input(props) {
-    const [labelClass, setLabelClass] = useState(false);
+const Input = React.forwardRef((props, ref) => {
 
-    const changeMyClass = () =>{
-        setLabelClass(!labelClass)
-    }
 
   return (
     <span className={classes.input}>
-        <input value={props.quantity} className={classes.normalInputBox} {...props.input} onClick={changeMyClass} />
+        <input value={props.value} className={classes.normalInputBox} {...props.input} />
     </span>
   )
-}
+});
+
+export default Input;

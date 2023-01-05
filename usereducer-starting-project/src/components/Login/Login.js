@@ -2,7 +2,13 @@
 
 //////////////////////////////////////////////////////////////
 
-import React, { useState, useEffect, useReducer, useContext } from "react";
+import React, {
+  useState,
+  useEffect,
+  useReducer,
+  useContext,
+  useRef,
+} from "react";
 
 import Card from "../UI/Card/Card";
 import classes from "./Login.module.css";
@@ -49,6 +55,9 @@ const Login = () => {
   );
   const ctx = useContext(AuthContext);
 
+  const emailInputRef = useRef();
+  const passwordInputRef = useRef();
+
   useEffect(() => {
     console.log("EFFECT RUNNING");
 
@@ -63,13 +72,15 @@ const Login = () => {
   useEffect(() => {
     const identifier = setTimeout(() => {
       console.log("Checking form validity!");
-      setFormIsValid(emailState.isValid && passwordState.isValid);
+      // setFormIsValid(emailState.isValid && passwordState.isValid);
+      setFormIsValid(emailIsValid && passwordIsValid);
     }, 1000);
 
     return () => {
       console.log("CLEANUP");
       clearTimeout(identifier);
     };
+    // eslint-disable-next-line
   }, [emailIsValid, passwordIsValid, formIsValid]);
   // }, [emailState.isValid, passwordState.isValid, formIsValid]); ----- also good
 
@@ -99,7 +110,15 @@ const Login = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    ctx.onLogin(emailState.value, passwordState.value);
+    if (formIsValid) {
+      ctx.onLogin(emailState.value, passwordState.value);
+    } else if (!emailIsValid) {
+      emailInputRef.current.activate();
+      emailInputRef.current.trial("email");
+    } else {
+      passwordInputRef.current.activate();
+      emailInputRef.current.trial("password");
+    }
   };
 
   return (
@@ -120,6 +139,7 @@ const Login = () => {
           />
         </div> */}
         <Input
+          ref={emailInputRef}
           className={`${classes.control} ${
             emailState.isValid === false ? classes.invalid : ""
           }`}
@@ -148,6 +168,7 @@ const Login = () => {
         </div> */}
 
         <Input
+          ref={passwordInputRef}
           className={`${classes.control} ${
             passwordState.isValid === false ? classes.invalid : ""
           }`}
@@ -161,7 +182,11 @@ const Login = () => {
         />
 
         <div className={classes.actions}>
-          <Button type="submit" className={classes.btn} disabled={!formIsValid}>
+          <Button
+            type="submit"
+            className={classes.btn}
+            // disabled={!formIsValid}
+          >
             Login
           </Button>
         </div>

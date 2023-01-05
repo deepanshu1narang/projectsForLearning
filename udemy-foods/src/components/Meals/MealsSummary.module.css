@@ -9,9 +9,9 @@
     text-align: center;
     border: 2px solid transparent;
     border-radius: 20px;
-    position: relative;
-    bottom: 17vh;
-    margin-bottom: -14vh;
+    /* bottom: 2vh; */
+    transform: translate(0%, -10%);
+    margin-bottom: -1vh;  
     box-shadow: 5px 5px 7px 8px rgba(0, 0, 0, 0.61);
 }
 

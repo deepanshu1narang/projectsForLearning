@@ -9,7 +9,7 @@ export default function LoaderModal(props) {
           <div className={classes.loading}>
               <img src={loader} alt="loading" />
           </div>,
-      document.getElementById("loading-portal"));
+      document.getElementById("portal"));
     }
     else{
         return null;
