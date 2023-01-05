@@ -4,7 +4,6 @@ import MealItemForm from "./MealItemForm";
 
 export default function MealItemCard(props) {
   const [quantity, setQuantity] = useState(0);
-  const [cartItems, setCartItems] = useState({});
 
   const addToCartHandler = (e) => {
     e.preventDefault();
@@ -22,32 +21,19 @@ export default function MealItemCard(props) {
     }
   };
 
-  const cartDataHandler = (mealData) => {
-    if (quantity > 0){
-      setCartItems((prev) => ({
-        ...prev,
-        [mealData.idMeal]: {
-          name: mealData.strMeal,
-          price: mealData.price,
-          quantity: quantity,
-          totalCost: mealData.price * quantity,
-        },
-      }));
+  const cartDataHandler = (mealData, quantity) => {
+    if(quantity > 0){
+      props.addInCart(mealData, quantity);
     }
-  };
+  }
 
   useEffect(() => {
-    // let cq = cartDataHandler(props.meal);
-    // console.log(cq);
-    cartDataHandler(props.meal);
-    console.log(cartItems, "===> new trial");
+    cartDataHandler(props.meal, quantity);
     // eslint-disable-next-line
   }, [props.meal, quantity]);
 
-  console.log(cartItems, "printingg cartItems state");
-
   return (
-    <div className={classes["mealCard"]}>
+    <div className={classes["mealCard"] }>
       <h1>{props.meal.strMeal}</h1>
       <img src={props.meal?.strMealThumb} alt={props.meal.strMeal} />
       <div className={classes.mealCardFooter}>

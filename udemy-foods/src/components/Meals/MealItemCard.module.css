@@ -32,6 +32,13 @@
     display: inline;
 }
 
+.mealCard button:hover {
+    height: 2rem;
+    font-size: larger;
+    display: inline;
+    background-color: white;
+}
+
 .mealCard img{
     height: 70%;
     max-height: 382.12px;
