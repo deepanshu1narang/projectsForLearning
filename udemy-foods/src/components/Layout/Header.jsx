@@ -1,7 +1,8 @@
 import React, { useContext, useState } from "react";
 // import LoaderModal from "../../Modals/LaoderModal";
 import Modal from "../../Modals/Modal";
-import CartContext from "../../Store/CartContext";
+// import CartContext from "../../Store/CartContext";
+import CartContextV1 from "../../Store/CartContextV1";
 import Cart from "../Cart/Cart";
 import classes from "./Header.module.css";
 import HeaderCartButton from "./HeaderCartButton";
@@ -10,11 +11,14 @@ export default function Header(props) {
   const [cartIsOpen, setCartIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const contextCart = useContext(CartContext);
+  // const contextCart = useContext(CartContext);
+  const contextCartV1 = useContext(CartContextV1);
 
-  const numberOfCartItems = contextCart.items.reduce((currentNumber, item) => {
-    return currentNumber + item.quantity;
-  }, 0);
+  // const numberOfCartItems = contextCartV1.items.reduce((currentNumber, item) => {
+  //   return currentNumber + item.quantity;
+  // }, 0);
+
+  const numberOfCartItems = 5;
 
   const cartButtonHandler = () => {
     setCartIsOpen(true);
@@ -26,7 +30,7 @@ export default function Header(props) {
     setTimeout(() => {
       setIsLoading(false);
       setCartIsOpen(false);
-    }, 6000);
+    }, 5000);
   };
 
   const cancelled = (e) => {
@@ -54,7 +58,6 @@ export default function Header(props) {
             }}
           >
             <p className={classes["cart-intro"]}>This is your cart info.</p>
-            {/* {isLoading && <LoaderModal isLoading={isLoading} />} */}
             <Cart
               confirmed={confirmed}
               cancelled={cancelled}
@@ -63,7 +66,6 @@ export default function Header(props) {
           </Modal>
         )}
 
-        {/* {isLoading && <LoaderModal isLoading={isLoading} />} */}
       </header>
     </React.Fragment>
   );

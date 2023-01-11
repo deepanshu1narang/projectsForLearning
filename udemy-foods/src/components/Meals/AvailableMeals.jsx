@@ -3,8 +3,9 @@ import mealDB from "../../MealDB.json";
 import classes from "./AvailableMeals.module.css";
 import MealItemCard from "./MealItemCard";
 
-export default function AvailableMeals() {
+export default function AvailableMeals(props) {
   const [cartItems, setCartItems] = useState({});
+  const payLoad = [];
 
   function addInCart(mealData, quantity) {
     setCartItems((prev) => ({
@@ -18,7 +19,14 @@ export default function AvailableMeals() {
     }));
   }
 
-  console.log(cartItems, "===> in AvailableMeals"); ////// success.... respect++
+  // console.log(cartItems, "===> cardData is ready"); ////// success.... respect++.... no longer required
+
+  for (const key in cartItems){
+    if(cartItems[key].quantity > 0)
+      payLoad.push(cartItems[key]);
+  }
+
+  console.log(payLoad, "====>ordersArray");
 
   return (
     <section className={classes["available-meals"]}>
@@ -33,6 +41,7 @@ export default function AvailableMeals() {
                 price={meal.price}
                 meal={meal}
                 addInCart={addInCart}
+                payLoad={payLoad}
               />
             </li>
           );

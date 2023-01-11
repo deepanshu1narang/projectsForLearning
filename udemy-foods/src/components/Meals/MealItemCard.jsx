@@ -17,14 +17,12 @@ export default function MealItemCard(props) {
     } else if (e.target.id === "decrease") {
       setQuantity((quantity) => quantity - 1);
     } else {
-      setQuantity(0);
+      setQuantity(q => q = 0);
     }
   };
 
   const cartDataHandler = (mealData, quantity) => {
-    if(quantity > 0){
-      props.addInCart(mealData, quantity);
-    }
+    props.addInCart(mealData, quantity);
   }
 
   useEffect(() => {

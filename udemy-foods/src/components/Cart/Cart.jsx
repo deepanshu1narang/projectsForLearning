@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import CartContextV1 from '../../Store/CartContextV1';
 import classes from "./Cart.module.css";
 
 export default function Cart(props) {
     const cartItems1 = [{name: "random", quantity: 2, cost: 300}, {name: 'items', quantity: 1, cost: 200}, {name: "for", quantity: 6, cost: 100}, {name:"now", quantity: 5, cost: 400}];
+
+    const cartContextV1 = useContext(CartContextV1);
 
   return (
     <div className={classes["cart-container"]}>
