@@ -8,10 +8,8 @@ function App() {
 
   return (
     <React.Fragment>
-      <CartProviderV1>
         <Header />
         <Meals />
-      </CartProviderV1>
     </React.Fragment>
   );
 }

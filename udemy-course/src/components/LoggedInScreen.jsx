@@ -14,6 +14,8 @@ import Counter2 from "./useReducer/Counter2";
 import ToDoList from "./useReducer/ToDoList";
 import ContextUsedCase from "./useContext/ContextUsedCase";
 import NoteState from "./useContext/store/notes-context-state";
+import UseMemo1 from "./useMemo/useMemo1";
+import UseCallBack1 from "./useCallBack/UseCallBack1";
 
 export default function LoggedInScreen(props) {
   return (
@@ -72,6 +74,19 @@ export default function LoggedInScreen(props) {
         "KEY TAKEAWAYS: if I want to use the context for App.js then I need to wrap the App.js in the provider instead of giving it here... look... AuthContext was used for Home component and MainHeader component; and those components are wrapped in here.....
         Home component uses NoteState (Provider) too and Home is wrapped inside the provider too... App component is no exception and it has to be inside a provider if it needs to utilize any context no matter what"
       </p>
+      <div>
+        <h1>
+          Challenge 8 -- useMemo
+          <UseMemo1 />
+        </h1>
+      </div>
+
+      <div>
+        <h1>
+          Challenge 9 -- useCallBack
+          <UseCallBack1 />
+        </h1>
+      </div>
       <aside style={{ border: "4px solid black" }}>
         <D3info />
       </aside>
